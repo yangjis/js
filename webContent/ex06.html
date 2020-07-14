@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>switch문 문제</title>
+</head>
+<body>
+	<h1>switch문 문제</h1>
+	<script type="text/javascript">
+		var point = prompt();
+		console.log(typeof point);
+		
+		var tmp = parseInt(point);
+		console.log(typeof tmp);
+		
+		var tmp = Number(point);
+		console.log(typeof tmp);
+		
+		switch(point){
+			case "1":
+				document.write("R101호");
+				break;
+			case "2":
+				document.write("R202호");
+				break;
+			case "3":
+				document.write("R203호");
+				break;
+			case "4":
+				document.write("R204호");
+				break;
+			default:
+				document.write("상담원에게 문의하세요");
+				break;
+		}
+	</script>
+
+</body>
+</html>

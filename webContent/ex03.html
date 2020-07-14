@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 변수를 선언해보자</title>
+</head>
+<body>
+	<h1>변수 선언</h1>
+</body>
+
+<script type="text/javascript">
+	console.log("=======변수선언=======");
+	var no;		
+	var str;
+	var boo;
+	
+	var no01, no02=10, no03;
+	
+	var person="정우성";
+	console.log(person);
+	
+	var person="이효리";
+	console.log(person);
+	
+	var person="유재석";
+	console.log(person);
+	
+</script>
+
+<script type="text/javascript">
+	console.log("=======자료형은???=======");
+	
+	var data;
+	console.log(typeof data);	//undefined
+	
+	var data = 15;
+	console.log(typeof data);
+	
+	var data = "안녕";
+	console.log(typeof data);
+	
+	var data = true;
+	console.log(typeof data);
+	
+	//undefined: 변수를 선언하고 자료를 아무것도 안넣었을때. 손대지 않음.
+	//null: 아무런 값도 나타내지 않는 특수한 값.(변수를 선언하고 null이라는 빈 값을 할당)
+</script>
+
+<script type="text/javascript">
+	console.log("======null값======");
+	var my1 = null;
+	var my2;
+	
+	console.log(my1);
+	console.log(my2);
+</script>
+
+<script type="text/javascript">
+	console.log("=======동등연산자 일치연산자 비교 =======");
+	
+	console.log("123" == 123);//true 자료타입이 다르면 알아서 자료형을 변경하여 비교한다.
+	console.log("123" === 123) //false 자료타입까지 같은지 확인한다.
+	
+	console.log(my1 == my2); //true
+	console.log(my1 === my2); //false
+	
+	console.log("=======");
+	console.log('' == false);//true
+	console.log('' == 0);	//true
+	console.log(0 == false);//true
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>변수의 범위</title>
+</head>
+<body>
+	<h1>변수의 범위(전역변수, 지역변수)</h1>
+</body>
+<script type="text/javascript">
+	/*var name = "grlobal";
+	console.log(name);
+	
+	function checkScope(){
+		var name = "local";
+		console.log(name);
+	}
+	
+	checkScope();
+	
+	console.log(name);*/
+	//같은이름의 익명함수와 기명함수가 있다면
+	//기명함수가 먼저 실행 되고 
+	//그 위에 익명함수가 덮어진다.
+	
+	
+	var name = "groblal";
+	
+	function checkScope(){
+		var name = "local"; //var를 안써주면 전역변수, 써주면 지역변수
+		console.log(name);
+	}
+	
+	checkScope();
+	console.log(name);
+</script>
+</html>

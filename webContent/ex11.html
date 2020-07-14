@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>함수</title>
+</head>
+<body>
+	<h1>함수</h1>
+</body>
+	<script type="text/javascript">
+		console.log("=======기명함수=======");
+		
+		//기명함수, 선언적함수, 이름있는함수   ------->정의만 해놓은 상태(실행문이 필요함.)
+		function testA(){
+			console.log("기명함수 실행");
+		}
+		
+		testA();
+	</script>
+	
+	<script type="text/javascript">
+		console.log("======익명함수=======");
+		
+		//익명함수
+		var testB = function(){
+			console.log("익명함수 실행");
+		};
+		
+		testB();
+		console.log(typeof testB);
+	</script>
+</html>

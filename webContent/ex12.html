@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>함수 실행 순서</title>
+</head>
+<body>
+	<h1>함수 실행 순서</h1>
+</body>
+	<script type="text/javascript">
+		console.log("=======함수실행 순서=======");
+		
+		var test = function(){
+			console.log("testA함수 입니다.");
+		}
+		
+		function test(){
+			console.log("testB함수 입니다.");
+		}
+		
+		test();
+		
+		//같은이름의 익명함수와 기명함수가 있다면
+		//기명함수가 먼저 실행 되고 
+		//그 위에 익명함수가 덮어진다.
+	</script>
+	
+	
+</html>

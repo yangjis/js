@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>반복문 while</title>
+</head>
+<body>
+	<h1>반복문 while</h1>
+	
+	<script type="text/javascript">
+	var num = 1;
+	var min = 100;
+	
+	while(num < 100){
+		if(num%6 == 0 && num%14 == 0){
+			
+			if(min>num){
+				min = num;
+			}
+			console.log(min);
+		}
+		num++;
+	}		
+		
+		
+	</script>
+</body>
+</html>
