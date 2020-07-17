@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이벤트</title>
+</head>
+<body>
+	<div>
+		<button id = "btn">js테스트버튼</button>
+		<h1 id = "display">이름출력영역</h1>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+	window.onload = function(){
+		var testButton = document.getElementById("btn");
+		var testArea = document.getElementById("display");
+
+		console.log(testArea);
+		testButton.onclick = function(){
+			testArea.innerHTML = "<font color='blue'>양지선<font>";
+			//console.log("버튼클릭");
+		};
+	};
+</script>
+</html>

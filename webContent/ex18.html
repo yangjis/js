@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계산기</title>
+<script type="text/javascript" src="/js/assets/js/math.js"></script>
+</head>
+<body>
+	<h1>계산기</h1>
+	
+	<input type = "text" value="" id = "left"> +
+	<input type = "text" value="" id = "right"> =
+	<input type = "text" value="" id = "sum">
+	<button id = "btnCal">계산하기</button>
+</body>
+
+<script type="text/javascript">
+	var sum = plus(5,5);
+	console.log(sum);
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+	window.onload = function (){
+		var btnPlus = document.getElementById("btnCal");
+		
+		btnPlus.onclick = function(){
+			console.log("금요일은 맥주를 마실거야");
+			
+			var left = document.getElementById("left").value;
+			console.log(left);
+			var right = document.getElementById("right").value;
+			console.log(right);
+			
+			var sum = document.getElementById("sum");
+			sum.value= Number(left) + Number(right);
+				
+			
+		};
+	};
+	
+	
+		
+</script>
+
+</html>
